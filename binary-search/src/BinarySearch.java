@@ -17,6 +17,11 @@ class BinarySearch {
          if ( array[middle] < item )
            first = middle + 1;
          else if ( array[middle] == item )
+              {
+           System.out.println(item + " found at location " + (middle + 1) + ".");
+           break;
+         }
+         else
       System.out.println("Enter " + num + " integers");
       for (counter = 0; counter < num; counter++)
       array[counter] = input.nextInt();
