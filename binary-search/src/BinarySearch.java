@@ -22,6 +22,13 @@ class BinarySearch {
            break;
          }
          else
+             {
+             last = middle - 1;
+         }
+         middle = (first + last)/2;
+      }
+      if ( first > last )
+          System.out.println(item + " is not found.\n");
       System.out.println("Enter " + num + " integers");
       for (counter = 0; counter < num; counter++)
       array[counter] = input.nextInt();
